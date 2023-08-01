@@ -38,7 +38,6 @@ pizzaJson.map((item, index)=>{
 
         c('.pizzaInfo--qt').innerHTML = modalQt;
 
-
         c('.pizzaWindowArea').style.opacity = 0;
         c('.pizzaWindowArea').style.display = 'flex';
         setTimeout(()=>{ //cria um timer que muda o valor gradativamente, nesse caso o da opacidade
