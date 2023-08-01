@@ -36,12 +36,9 @@ function comecarEtapa(){
 function atualizaInterface(){
     let etapa = etapas[etapaAtual];
     let candidato = etapa.candidatos.filter((item)=>{
-        if(item.numero === numero){
-            return true;
-        }else{
-            return false;
-        }
+        return item.numero === numero ? true : false;
     });
+    
     if(candidato.length > 0){
         candidato = candidato[0];
         seuVotoPara.style.display = 'block';
