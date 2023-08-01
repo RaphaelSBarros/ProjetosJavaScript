@@ -8,6 +8,7 @@ document.querySelector('.busca').addEventListener('submit', async (event)=>{
         showWarning('Carregando...');
 
         let getlatlon = `http://api.openweathermap.org/geo/1.0/direct?q=${encodeURI(input)}&appid=3b582017a52312a868e14a6e3c6c3e3e&units=metric&lang=pt_br`;
+        
         let getinfo = await fetch(getlatlon);
         let info = await getinfo.json();
         let lat = info[0].lat;
